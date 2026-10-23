@@ -47,7 +47,8 @@ dependencies of verwijderen van code.
 
 ## CODEOWNERS
 
-`codeowners/<repo>` bevat per repo een `CODEOWNERS`-bestand met alleen de
-gevoelige paden. Kopieer het naar `.github/CODEOWNERS` in die repo. GitHub eist
+Per repo staat er een `CODEOWNERS`-bestand met alleen de gevoelige paden in
+`.github/CODEOWNERS` van die repo zelf. Lokaal staat de bron in
+`codeowners/<repo>`; die map gaat bewust niet mee in deze publieke repo. GitHub eist
 voor die paden een review van het team `@medialinq/board`, ook als de rest van
 een pull request automatisch mag mergen.
