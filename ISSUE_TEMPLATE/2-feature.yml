@@ -1,0 +1,39 @@
+name: Feature
+description: Nieuwe functionaliteit of een wijziging in gedrag.
+type: Feature
+labels: [needs-triage]
+body:
+  - type: textarea
+    id: probleem
+    attributes:
+      label: Welk probleem lost dit op, en voor wie?
+      description: Begin bij de gebruiker, niet bij de oplossing.
+      placeholder: Als editor wil ik ..., zodat ...
+    validations:
+      required: true
+  - type: textarea
+    id: uitkomst
+    attributes:
+      label: Gewenste uitkomst
+      description: Wat kan de gebruiker straks wat nu niet kan?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptatie
+    attributes:
+      label: Acceptatiecriteria
+      description: Toetsbaar. Hieraan test QA en hierop wordt de PR beoordeeld.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Buiten scope
+      description: Wat hoort hier uitdrukkelijk niet bij?
+  - type: textarea
+    id: ontwerp
+    attributes:
+      label: Ontwerp, schets of voorbeeld

@@ -1,0 +1,43 @@
+name: Taak
+description: Technisch werk zonder nieuw gedrag voor de gebruiker (onderhoud, refactor, CI, docs, security).
+type: Task
+labels: [needs-triage]
+body:
+  - type: dropdown
+    id: soort
+    attributes:
+      label: Soort
+      options:
+        - Onderhoud / dependencies
+        - Refactor
+        - CI / build / deploy
+        - Documentatie
+        - Security
+    validations:
+      required: true
+  - type: textarea
+    id: wat
+    attributes:
+      label: Wat moet er gebeuren?
+    validations:
+      required: true
+  - type: textarea
+    id: waarom
+    attributes:
+      label: Waarom nu?
+      description: Welk probleem of risico neemt dit weg?
+    validations:
+      required: true
+  - type: textarea
+    id: klaar
+    attributes:
+      label: Wanneer is het klaar?
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: risico
+    attributes:
+      label: Risico's
+      description: Breaking changes, migraties, gevolgen voor andere repo's (db-schema → platform → webapp/panel).

@@ -1,0 +1,64 @@
+name: Bug
+description: Iets werkt niet zoals het hoort.
+type: Bug
+labels: [needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Eén bug per issue. Gaat het om een beveiligingslek? Kies dan **Taak** met soort *Security*, of meld het direct aan Francis of Mick.
+  - type: textarea
+    id: wat
+    attributes:
+      label: Wat gaat er mis?
+      description: Kort en feitelijk. Wat zie je?
+    validations:
+      required: true
+  - type: textarea
+    id: stappen
+    attributes:
+      label: Stappen om te reproduceren
+      placeholder: |
+        1. Log in als tenant-admin op hjn
+        2. Open Projects > ...
+        3. Klik op ...
+    validations:
+      required: true
+  - type: textarea
+    id: verwacht
+    attributes:
+      label: Wat had er moeten gebeuren?
+    validations:
+      required: true
+  - type: dropdown
+    id: omgeving
+    attributes:
+      label: Omgeving
+      options:
+        - Productie
+        - Gedeelde dev-omgeving
+        - Lokaal
+        - Weet ik niet
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Tenant, versie, browser / host-app
+      placeholder: "hjn · webapp 1.4.2 · Chrome 141  /  Premiere 25.6"
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - "Blokkerend: niemand kan verder"
+        - "Hoog: belangrijke functie werkt niet, geen omweg"
+        - "Middel: er is een omweg"
+        - "Laag: cosmetisch of randgeval"
+    validations:
+      required: true
+  - type: textarea
+    id: bewijs
+    attributes:
+      label: Logs, screenshots, foutmeldingen
+      description: Geen wachtwoorden, tokens of klantgegevens plakken.
