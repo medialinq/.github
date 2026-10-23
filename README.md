@@ -2,8 +2,9 @@
 
 Gedeelde issue- en PR-templates voor alle repo's in de medialinq-organisatie.
 
-GitHub gebruikt de templates uit deze repo voor elke medialinq-repo die geen
-eigen `.github/ISSUE_TEMPLATE/` of PR-template heeft. Eén plek, geen kopieën.
+GitHub gebruikt de templates in `.github/` van deze repo voor elke
+medialinq-repo die geen eigen `.github/ISSUE_TEMPLATE/` of PR-template heeft.
+Eén plek, geen kopieën.
 
 **Deze repo moet public zijn**; anders negeert GitHub hem. Zet hier dus nooit
 iets interns neer.
@@ -23,7 +24,8 @@ automatisch.
 ## Labels en de werkstroom
 
 Labels bestaan per repo. `scripts/sync-labels.sh` zet ze in alle zes repo's
-gelijk.
+en in deze repo gelijk; GitHub eist dat een label uit een template ook hier
+bestaat.
 
 ```
 nieuw issue ──► needs-triage
