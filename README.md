@@ -23,7 +23,7 @@ automatisch.
 
 ## Labels en de werkstroom
 
-Labels bestaan per repo. `scripts/sync-labels.sh` zet ze in alle zes repo's
+Labels bestaan per repo. `scripts/sync-labels.sh` zet ze in alle repo's
 en in deze repo gelijk; GitHub eist dat een label uit een template ook hier
 bestaat.
 

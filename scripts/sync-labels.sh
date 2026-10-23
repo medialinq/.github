@@ -4,7 +4,7 @@
 # Vereist: gh CLI, ingelogd met schrijfrechten op de repo's.
 set -euo pipefail
 
-REPOS=(.github platform webapp panel flow flowworker db-schema)
+REPOS=(.github platform webapp db-schema panel flow flowworker ingest mam sidecar)
 
 LABELS=(
   "needs-triage|ededed|Nieuw, nog niet beoordeeld"
